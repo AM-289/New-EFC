@@ -67,3 +67,11 @@ footer {
     margin-top: 10px;
     font-size: 10px;
 }
+
+@media (max-width: 768px) {
+    .main-footer, .info-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
