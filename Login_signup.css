@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+fieldset {
+    display: flex;
+    border-radius: 25px;
+    border: 5px solid violet;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+    background-color: aqua;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin: auto;
+    background-color: violet;  
+    border-radius: 15px;
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="password"], 
+input[type="email"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.sign_up {
+    display: none;
+}
+
+p {
+    font-size: 13px;
+}
+
+span {
+    color: blue;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+span:hover {
+    cursor: pointer;
+}
+
+.terms {
+    display: inline-block;
+    font-size: 13px;
+}
+
+button {
+    width: auto;
+    padding: 5px 10px;
+    background-color: violet;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+}
+
+button:hover {
+    font-size: 19px;
+    transition: 0.2s ease-in-out;
+    background-color: #e0aaff;
+    cursor: pointer;
+}

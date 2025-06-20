@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="login_signup.css">
+    <link rel="stylesheet" href="Login_signup.css">
 </head>
 <body>
     <?php
-        include_once 'header.php';
+        include_once 'header.html';
     ?>
 
     <form class="login" action="" method="POST">
@@ -31,8 +31,10 @@
             <input type="email" id="new_email" name="new_email" placeholder="Email" required>
             <input type="password" id="new_password" name="new_password" placeholder="Mot de passe" required>
             <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmer le mot de passe" required>
-            <input type="checkbox" id="terms" name="terms" required>
-            <label for="terms">En créant un compte, vous acceptez nos <a href="terms.php">conditions d'utilisation</a>.</label>
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">En créant un compte, vous acceptez nos <a href="terms.php">conditions d'utilisation</a>.</label>
+            </div>
             <button type="submit">Créer un compte</button>
             <p>Déjà un compte ? <span onclick="login()">Connectez-vous ici</span></p>
         </fieldset>
@@ -40,19 +42,19 @@
 
     <script>
         function signup() {
-            document.querySelector('.sign_up').style.display = 'block';
+            document.querySelector('.sign_up').style.display = 'flex';
             document.querySelector('.login').style.display = 'none';
         }
 
         function login() {
-            document.querySelector('.login').style.display = 'block';
+            document.querySelector('.login').style.display = 'flex';
             document.querySelector('.sign_up').style.display = 'none';
         }
 
     </script>
 
     <?php
-        include_once 'footer.php';
+        include_once 'footer.html';
     ?>
 </body>
 </html>
