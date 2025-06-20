@@ -20,7 +20,7 @@
             <input type="password" id="password" name="password" required>
             <p>Mot de passe oublié ? <a href="reset_password.php">Réinitialiser le mot de passe</a></p>
             <button type="submit">Se connecter</button>
-            <p>Pas encore de compte ? <!--a href="inscription.php"--><span onclick="signup()">Créez-en un ici</span></p>
+            <p>Pas encore de compte ? <span onclick="signup()">Créez-en un ici</span></p>
         </fieldset>
     </form>
 
@@ -28,6 +28,26 @@
         <fieldset>
             <legend>Créer un compte :</legend>
             <input type="text" id="new_username" name="new_username" placeholder="Nom d'utilisateur" required>
+            <div id="choiceStatut">
+                <label for="statut">Statut :</label>
+                    <input type="radio" name="statut" id="passenger" required="true" checked><label for="passenger">Passager</label>
+                    <input type="radio" name="statut" id="driver" required="true"><label for="driver">Conducteur</label>
+                    <div class="preference">
+                        <label for="preference">Préférence :</label>
+                        <div class="preference-animals">
+                            <input type="radio" value="animals_accepted">
+                            <label for="animals_accepted"> Accepte les animaux</label>
+                            <input type="radio" value="no_animals">
+                            <label for="no_animals">Refuse les animaux</label>
+                        </div>
+                        <div class="preference_smoker">
+                            <input type="radio" value="smoker_accepted">
+                            <label for="smoker_accepted"> Accepte les fumeurs</label>
+                            <input type="radio" value="no_smoker">
+                            <label for="no_smoker">Refuse les fumeurs</label>
+                        </div>
+                    </div>
+            </div>
             <input type="email" id="new_email" name="new_email" placeholder="Email" required>
             <input type="password" id="new_password" name="new_password" placeholder="Mot de passe" required>
             <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmer le mot de passe" required>

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.sign_up {
+    display: none;
+}
+
 form {
     display: flex;
     justify-content: center;
@@ -40,8 +44,11 @@ input[type="email"] {
     border: 1px solid #ccc;
 }
 
-.sign_up {
-    display: none;
+.statut {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
 p {
