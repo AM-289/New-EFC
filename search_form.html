@@ -1,0 +1,10 @@
+<form class="search_form" action="">
+    <fieldset class="search_fieldset">
+        <legend>Rechercher un trajet</legend>
+        <input type="text" placeholder="Lieu de départ" name="starting_point" id="starting_point" value="<?php echo isset($_GET['starting_point']) ? htmlspecialchars($_GET['starting_point']) : ''; ?>">
+        <input type="text" placeholder="Lieu d'arrivée" name="ending_point" id="ending_point" value="<?php echo isset($_GET['ending_point']) ? htmlspecialchars($_GET['ending_point']) : ''; ?>">
+        <input type="number" placeholder="0" name="passenger_number" id="passenger_number" min="1" max="8" value="<?php echo isset($_GET['passenger_number']) ? htmlspecialchars($_GET['passenger_number']) : ''; ?>">
+        <input type="date" placeholder="Date de départ" name="departure_date" id="departure_date" value="<?php echo isset($_GET['departure_date']) ? htmlspecialchars($_GET['departure_date']) : ''; ?>">
+        <button type="submit" class="search">Rechercher</button>
+    </fieldset>
+</form>
