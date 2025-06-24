@@ -24,9 +24,11 @@
         </fieldset>
     </form>
 
-    <form class="sign_up" action="" method="POST">
+    <form class="sign_up" action="signup_inc.php" method="POST">
         <fieldset>
             <legend>Créer un compte :</legend>
+            <input type="text" id="new_name" name="new_name" placeholder="Nom" required>
+            <input type="text" id="new_surname" name="new_surname" placeholder="Prénom" required>
             <input type="text" id="new_username" name="new_username" placeholder="Nom d'utilisateur" required>
             <div id="choiceStatut">
                 <label for="statut">Statut :</label>
@@ -34,7 +36,7 @@
                     <input type="radio" name="statut" id="driver" required="true" ><label for="driver">Conducteur</label>
                     <div class="preference">
                         <label for="preference">Préférence :</label>
-                        <div class="preference-animals">
+                        <div class="preference_animals">
                             <input type="radio" value="animals_accepted">
                             <label for="animals_accepted"> Accepte les animaux</label>
                             <input type="radio" value="no_animals">
