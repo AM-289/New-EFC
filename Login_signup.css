@@ -48,6 +48,13 @@ input[type="email"] {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
+}
+
+.preference {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
     gap: 10px;
 }
 

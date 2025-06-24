@@ -31,7 +31,7 @@
             <div id="choiceStatut">
                 <label for="statut">Statut :</label>
                     <input type="radio" name="statut" id="passenger" required="true" checked><label for="passenger">Passager</label>
-                    <input type="radio" name="statut" id="driver" required="true"><label for="driver">Conducteur</label>
+                    <input type="radio" name="statut" id="driver" required="true" ><label for="driver">Conducteur</label>
                     <div class="preference">
                         <label for="preference">Préférence :</label>
                         <div class="preference-animals">
@@ -70,6 +70,33 @@
             document.querySelector('.login').style.display = 'flex';
             document.querySelector('.sign_up').style.display = 'none';
         }
+
+/*        function preferenceShow() {
+            const preference = document.querySelector('.preference');
+            if (document.getElementById('driver').checked) {
+                preference.style.display = 'flex';
+            } else if (document.getElementById('passenger').checked) {
+                preference.style.display = 'none';
+            }
+        }
+
+        preferenceShow();*/
+
+        const driver = document.getElementById('driver');
+        const passenger = document.getElementById('passenger');
+        const preference = document.querySelector('.preference');
+
+        driver.addEventListener('click', function() {
+            if (this.checked) {
+                preference.style.display = 'flex';
+            } 
+        });
+
+        passenger.addEventListener('click', function() {
+            if (this.checked) {
+                preference.style.display = 'none';
+            }
+        });
 
     </script>
 
